@@ -57,8 +57,8 @@
 \*-----------------------------------*/
 
 body.dark_theme {
-    --bg-primary: hsl(0, 0%, 12%);
-    --bg-secondary: hsl(0, 0%, 19%);
+    --bg-primary: hsl(0, 0%, 0%);
+    --bg-secondary: hsl(0, 0%, 12%);
     --color-primary: hsl(0, 0%, 100%);
     --color-secondary: hsl(0, 0%, 62%);
     --card-shadow: hsla(0, 0%, 0%, 0.4);
@@ -151,6 +151,12 @@ html {
 body {
     background: var(--bg-primary);
     transition: var(--transition-1);
+    -moz-transform: scale(0.95, 0.95);
+    /* Moz-browsers */
+    zoom: 0.95;
+    /* Other non-webkit browsers */
+    zoom: 95%;
+    /* Webkit browsers */
 }
 
 body.active {
@@ -478,7 +484,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 115px;
+    padding-top: 200px;
     margin-bottom: var(--section-padding);
 }
 
@@ -486,6 +492,7 @@ main {
     max-width: 500px;
     width: 125%;
     margin-bottom: 30px;
+    overflow: hidden;
 }
 
 :is(.hero-social-list, .scroll-down) {
@@ -494,6 +501,7 @@ main {
 
 .hero-content {
     max-width: 450px;
+    margin-top: 10%;
 }
 
 .hero-title {
