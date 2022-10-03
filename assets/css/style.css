@@ -57,7 +57,7 @@
 \*-----------------------------------*/
 
 body.dark_theme {
-    --bg-primary: hsl(0, 0%, 0%);
+    --bg-primary: #170200;
     --bg-secondary: hsl(0, 0%, 12%);
     --color-primary: hsl(0, 0%, 100%);
     --color-secondary: hsl(0, 0%, 62%);
