@@ -151,6 +151,7 @@ html {
 body {
     background: var(--bg-primary);
     transition: var(--transition-1);
+    transform: scale(1, 1);
     -moz-transform: scale(0.95, 0.95);
     /* Moz-browsers */
     zoom: 0.95;
